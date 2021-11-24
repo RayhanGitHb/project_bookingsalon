@@ -9,7 +9,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
  <html>
 
  <head>
-     <title>The Mistress | Salon</title>
+     <title>The Mistress | Beauty Salon </title>
      <link href="<?= base_url(); ?>assets/main/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
      <!-- Custom Theme files -->
      <script src="<?= base_url(); ?>assets/main/js/jquery.min.js"></script>
@@ -19,7 +19,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
      <meta name="viewport" content="width=device-width, initial-scale=1">
      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
      <meta name="keywords" content="Innate Responsive web template, Bootstrap Web Templates, Flat Web Templates, AndroId Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
      <script type="application/x-javascript">
          addEventListener("load", function() {
              setTimeout(hideURLbar, 0);
@@ -43,6 +43,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
              });
          });
      </script>
+	 
+	 <!--datepicker-->
+	 <link href="<?= base_url(); ?>assets/main/css/bootstrap-datepicker.min.css" rel="stylesheet">
+	 
+
      <!----start-top-nav-script---->
 
      <script type="text/javascript" src="<?= base_url(); ?>assets/main/js/modernizr.custom.js"></script>
@@ -71,7 +76,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                              <span class="icon-bar aits"></span>
                          </button>
                          <div class="navbar-brand logo w3layouts wow fadeInLeft animated" data-wow-delay=".5s">
-                             <h1><a class="agileits" href="index.html">The<br><span>Mistress</span><br>Salon</a></h1>
+                             <h1><a class="agileits" href="<?= base_url('');?>">The<br><span>Mistress</span><br>Salon</a></h1>
                          </div>
                      </div>
 
@@ -82,8 +87,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                              <li><a href="#about" class="agileits w3layouts scroll"><span data-hover="About">About</span> </a> </li>
                              <li><a href="#gallery" class="scroll agileits w3layouts"><span data-hover="Gallery">Gallery</span></a></li>
                              <li><a href="#services" class="scroll agileits w3layouts"><span data-hover="Services">Services</span> </a></li>
-                             <li><a href="#events" class="scroll agileits w3layouts"><span data-hover="Events">Events</span> </a></li>
                              <li><a href="#team" class="scroll agileits w3layouts"><span data-hover="Team">Team</span> </a></li>
+							 <li><a href="<?= base_url('auth') ?>" class="agileits w3layouts"><span data-hover="Team">Halaman Admin</span> </a></li>
                          </ul>
                      </div><!-- /.navbar-collapse -->
                  </nav>
@@ -92,29 +97,29 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
              <div class="banner agileits w3layouts">
 
                  <section class="wrapper wow agileits w3layouts fadeInUp animated" data-wow-delay=".5s">
-                     <h2>Contrary to popular belief</h2>
-                     <h3 class="sentence agileits w3layouts">Lorem Ipsum is
+                     <h2>Cantik adalah impian setiap manusia.</h2>
+                     <h3 class="sentence agileits w3layouts"> Cantik itu
                          <div class="popEffect agileits w3layouts">
-                             <span> simply.</span>
+                             <span>sample.</span>
                              <span>clean.</span>
                              <span>dummy.</span>
                              <span>text.</span>
-
                          </div>
                      </h3>
                  </section>
-                 <a href="single.html" class="hvr-rectangle-out agileits w3layouts wow fadeInDown animated" data-wow-delay=".5s">Read More</a>
-
+				 
+                 <a href="#about" class="agileits w3layouts scroll hvr-rectangle-out agileits w3layouts wow fadeInDown animated" data-wow-delay=".5s">Baca Selanjutnya Disini</a>
+             </div>
              </div>
          </div>
      </div>
-     <!--content-->
+
+     <!--about-->
      <div class="content agileits w3layouts">
          <div class="container agileits w3layouts">
              <div class="col-top agileits w3layouts" id="about">
-                 <h3>Welcome to innate </h3>
-                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
-                     Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                 <h3>Selamat Datang di The Mistress </h3>
+                 <p>The Mistress adalah Salon Kecantikan yang </p>
              </div>
              <!---->
              <div class="tab-head agileits w3layouts">
@@ -123,8 +128,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                          <li class="active agileits w3layouts"><a href="#tab1" data-toggle="tab"><span class="glyphicon agileits w3layouts glyphicon-home" aria-hidden="true"></span>Lorem Ipsum has</a></li>
                          <li class=""><a href="#tab2" data-toggle="tab"><span class="glyphicon agileits w3layouts glyphicon-heart-empty" aria-hidden="true"></span>At vero eos et</a></li>
                          <li class=""><a href="#tab3" data-toggle="tab"><span class="glyphicon agileits w3layouts glyphicon-leaf" aria-hidden="true"></span>On the other hand</a></li>
-                         <li class=""><a href="#tab4" data-toggle="tab"><span class="glyphicon agileits w3layouts glyphicon-erase" aria-hidden="true"></span>Lorem Ipsum has</a></li>
-                         <li class=""><a href="#tab5" data-toggle="tab"><span class="glyphicon agileits w3layouts glyphicon-picture" aria-hidden="true"></span>Nam libero tempore</a></li>
+ 
                      </ul>
                  </nav>
                  <div class="col-md-6 tab-content wow fadeInRight animated" data-wow-delay=".5s"">
@@ -132,8 +136,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                      <div class="facts">
                          <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
                          <h4>Lorem Ipsum has</h4>
-                         <p> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour
-                             , or randomised words which don't look even slightly believable.There are many variations .</p>
+                         
 
                      </div>
                  </div>
@@ -148,37 +151,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                  </div>
                  <div class="tab-pane  text-style" id="tab3">
                      <div class="facts">
-                         <span class="glyphicon glyphicon-leaf" aria-hidden="true"></span>
-                         <h4>On the other hand</h4>
-                         <p> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour
-                             , or randomised words which don't look even slightly believable.There are many variations .</p>
+                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d571.4990971612489!2d108.22681003326451!3d-7.328396129122246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f575ac796e5bd%3A0x1266496f1d655684!2sUniversitas%20Bina%20Sarana%20Informatika!5e0!3m2!1sen!2sid!4v1636903456628!5m2!1sen!2sid" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
                      </div>
                  </div>
-                 <div class="tab-pane text-style" id="tab4">
-                     <div class="facts">
-                         <span class="glyphicon glyphicon-erase" aria-hidden="true"></span>
-                         <h4>Lorem Ipsum has</h4>
-                         <p> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour
-                             , or randomised words which don't look even slightly believable.There are many variations .</p>
-
-                     </div>
-                 </div>
-                 <div class="tab-pane  text-style" id="tab5">
-                     <div class="facts">
-                         <span class="glyphicon glyphicon-picture" aria-hidden="true"></span>
-                         <h4>Nam libero tempore</h4>
-                         <p> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour
-                             , or randomised words which don't look even slightly believable.There are many variations .</p>
-
-                     </div>
-                 </div>
+                 
 
              </div>
              <div class="clearfix"></div>
          </div>
      </div>
-     <!---->
+
+     <!--Gallery-->
      <div class="portfolio" id="gallery">
 
          <div class="portfolio-top wow fadeInDown animated" data-wow-delay=".5s">
@@ -187,10 +171,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                  <figure class="effect-jazz">
                      <a href="#portfolioModal1" data-toggle="modal">
 
-                         <img src="<?= base_url(); ?>assets/main/images/pi.jpg" alt="img25" class="img-responsive" />
+                         <img src="<?= base_url(); ?>assets/main/images/layanan/rambut.jpg" alt="img25" class="img-responsive" />
                          <figcaption>
-                             <h4> Contrary to popular belief</h4>
-                             <p> There are many variations of passages of Lorem Ipsum .</p>
+                             <h4> Cream Bath</h4>
+                             <p> Biaya : Rp. 50.000. </p>
+							 <p>Klik disini untuk lebih lengkap...</p>
                          </figcaption>
                      </a>
                  </figure>
@@ -199,10 +184,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                  <figure class="effect-jazz">
                      <a href="#portfolioModal2" data-toggle="modal">
 
-                         <img src="<?= base_url(); ?>assets/main/images/pi1.jpg" alt="img25" class="img-responsive" />
+                         <img src="<?= base_url(); ?>assets/main/images/layanan/makeup.jpg" alt="img25" class="img-responsive" />
                          <figcaption>
-                             <h4> Contrary to popular belief</h4>
-                             <p> There are many variations of passages of Lorem Ipsum .</p>
+                             <h4> Make Over</h4>
+                             <p> Biaya : Rp. 80.000. </p>
+							 <p>Klik disini untuk lebih lengkap...</p>
                          </figcaption>
                      </a>
                  </figure>
@@ -211,10 +197,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                  <figure class="effect-jazz">
                      <a href="#portfolioModal3" data-toggle="modal">
 
-                         <img src="<?= base_url(); ?>assets/main/images/pi2.jpg" alt="img25" class="img-responsive" />
+                         <img src="<?= base_url(); ?>assets/main/images/layanan/pijatlulur.jpg" alt="img25" class="img-responsive" />
                          <figcaption>
-                             <h4> Contrary to popular belief</h4>
-                             <p> There are many variations of passages of Lorem Ipsum .</p>
+                             <h4> Pijat Lulur</h4>
+                             <p> Biaya : Rp. 100.000. </p>
+							 <p>Klik disini untuk lebih lengkap...</p>
                          </figcaption>
                      </a>
                  </figure>
@@ -227,10 +214,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
              <figure class="effect-jazz">
                  <a href="#portfolioModal4" data-toggle="modal">
 
-                     <img src="<?= base_url(); ?>assets/main/images/pi3.jpg" alt="img25" class="img-responsive" />
+                     <img src="<?= base_url(); ?>assets/main/images/layanan/kuku.jpg" alt="img25" class="img-responsive" />
                      <figcaption>
-                         <h4 class="effcet-text"> Popular belief</h4>
-                         <p> There are many variations of passages .</p>
+                        <h4> Pedicure</h4>
+                             <p> Biaya : Rp. 75.000. </p>
+							 <p>Klik Gambar</p>
                      </figcaption>
                  </a>
              </figure>
@@ -239,10 +227,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
              <figure class="effect-jazz">
                  <a href="#portfolioModal5" data-toggle="modal">
 
-                     <img src="<?= base_url(); ?>assets/main/images/pi5.jpg" alt="img25" class="img-responsive" />
+                     <img src="<?= base_url(); ?>assets/main/images/layanan/rambut2.jpg" alt="img25" class="img-responsive" />
                      <figcaption>
-                         <h4 class="effcet-text"> Popular belief</h4>
-                         <p> There are many variations of passages.</p>
+                         <h4> Hair Styling</h4>
+                             <p> Biaya : Rp. 50.000. </p>
+							 <p>Klik Gambar</p>
                      </figcaption>
                  </a>
              </figure>
@@ -251,10 +240,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
              <figure class="effect-jazz">
                  <a href="#portfolioModal6" data-toggle="modal">
 
-                     <img src="<?= base_url(); ?>assets/main/images/pi4.jpg" alt="img25" class="img-responsive" />
+                     <img src="<?= base_url(); ?>assets/main/images/layanan/wajah.jpg" alt="img25" class="img-responsive" />
                      <figcaption>
-                         <h4 class="effcet-text">Popular belief</h4>
-                         <p> There are many variations of passages.</p>
+                        <h4> Face Masking</h4>
+                             <p> Biaya : Rp. 55.000. </p>
+							 <p>Klik Gambar</p>
                      </figcaption>
                  </a>
              </figure>
@@ -262,11 +252,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
          <div class="col-md-3 grid grid-wi slideanim">
              <figure class="effect-jazz">
                  <a href="#portfolioModal7" data-toggle="modal">
-
-                     <img src="<?= base_url(); ?>assets/main/images/pi6.jpg" alt="img25" class="img-responsive" />
+                     <img src="<?= base_url(); ?>assets/main/images/layanan/waxing.jpg" alt="img25" class="img-responsive" />
                      <figcaption>
-                         <h4 class="effcet-text"> Popular belief</h4>
-                         <p> There are many variations of passages.</p>
+                         <h4> Waxing</h4>
+                             <p> Biaya : Rp. 90.000. </p>
+							 <p>Klik Gambar</p>
                      </figcaption>
                  </a>
              </figure>
@@ -275,6 +265,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
      </div>
      </div>
      <!---->
+
      <!-- Portfolio Modals -->
      <div class="portfolio-modal modal fade slideanim" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
          <div class="modal-content">
@@ -287,9 +278,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
                  <div class="col-lg-8 col-lg-offset-2">
                      <div class="modal-body">
-                         <h3>Lorem ipsum</h3>
+                         <h3>Creambath</h3>
 
-                         <img src="<?= base_url(); ?>assets/main/images/pi.jpg" class="img-responsive" alt="">
+                         <img src="<?= base_url(); ?>assets/main/images/layanan/rambut.jpg" class="img-responsive" alt="">
                          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                      </div>
                  </div>
@@ -310,7 +301,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                      <div class="modal-body">
                          <h3>Dummy text</h3>
 
-                         <img src="images/pi1.jpg" class="img-responsive" alt="">
+                         <img src="<?= base_url(); ?>assets/main/images/layanan/rambut.jpg" class="img-responsive" alt="">
                          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                      </div>
                  </div>
@@ -331,7 +322,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                      <div class="modal-body">
                          <h3>Popular belief</h3>
 
-                         <img src="<?= base_url(); ?>assets/main/images/pi2.jpg" class="img-responsive" alt="">
+                         <img src="<?= base_url(); ?>assets/main/images/layanan/rambut.jpg" class="img-responsive" alt="">
                          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                      </div>
                  </div>
@@ -352,7 +343,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                      <div class="modal-body">
                          <h3>Lorem ipsum</h3>
 
-                         <img src="<?= base_url(); ?>assets/main/images/pi3.jpg" class="img-responsive" alt="">
+                         <img src="<?= base_url(); ?>assets/main/images/layanan/rambut.jpg" class="img-responsive" alt="">
                          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                      </div>
                  </div>
@@ -373,7 +364,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                      <div class="modal-body">
                          <h3>Dummy text</h3>
 
-                         <img src="<?= base_url(); ?>assets/main/images/pi5.jpg" class="img-responsive" alt="">
+                         <img src="<?= base_url(); ?>assets/main/images/layanan/rambut.jpg" class="img-responsive" alt="">
                          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                      </div>
                  </div>
@@ -394,56 +385,69 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                      <div class="modal-body">
                          <h3>Popular belief</h3>
 
-                         <img src="<?= base_url(); ?>assets/main/images/pi4.jpg" class="img-responsive" alt="">
-                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                         <img src="<?= base_url(); ?>assets/main/images/layanan/rambut.jpg" class="img-responsive" alt="">
+                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since th22121e 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                      </div>
                  </div>
              </div>
-
          </div>
      </div>
-     <div class="portfolio-modal modal fade slideanim" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
-         <div class="modal-content">
-             <div class="close-modal" data-dismiss="modal">
-                 <div class="lr">
-                     <div class="rl"></div>
-                 </div>
-             </div>
-             <div class="container">
+	 
+	 <!--Model Submit-->
+						 <div class="portfolio-modal modal fade slideanim" id="bookingmodal" tabindex="-1" role="dialog" aria-hidden="true">
+							 <div class="modal-content">
+								 <div class="close-modal" data-dismiss="modal">
+									 <div class="lr">
+										 <div class="rl"></div>
+									 </div>
+								 </div>
+								 <div class="container">
+									 <div class="col-lg-8 col-lg-offset-2">
+										 <div class="modal-body">
+											 <h3>Booking Online</h3>
+											 <br>
+											<form action="<?= base_url(); ?>/main/booking" method="post">
+												<div class="form-group">
+													<div class="col-xs-3">
+													<input type="text" class="form-control" id="nama" name="nama" placeholder="Nama Lengkap">
+													</div>	
+												</div>
+												
+												<label class="hvr-rectangle-out agileits w3layouts">
+													<input type="submit" value="Send" >
+												</label>
+													<input type="submit" value="Send" >
+											 </form>
+										 </div>
+									 </div>
+								 </div>
 
-                 <div class="col-lg-8 col-lg-offset-2">
-                     <div class="modal-body">
-                         <h3>Lorem ipsum</h3>
-
-                         <img src="<?= base_url(); ?>assets/main/images/pi6.jpg" class="img-responsive" alt="">
-                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                     </div>
-                 </div>
-
-             </div>
-         </div>
-     </div>
+							 </div>
+						 </div>
+						 
      <!-- /Portfolio Modals -->
 
 
-     <!---->
+     <!--Services-->
      <div class="container">
          <div class="services" id="services">
              <h3>Services</h3>
              <div class="ser-grid ">
                  <div class="col-md-4 ser-top wow fadeInLeft animated" data-wow-delay=".5s">
-                     <h5>Lorem Ipsum is simply dummy</h5>
-                     <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete.</p>
+                     <h5>Fasilitas 1</h5>
+                     <p>Deskripsi 1.</p>
                      <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
                  </div>
                  <div class="col-md-4 ser-top wow fadeInUp animated" data-wow-delay=".5s">
-                     <h5>I will give you a complete</h5>
-                     <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete . </p>
-                     <span class="glyphicon glyphicon-file" aria-hidden="true"></span>
+                     <h5>Booking Online</h5>
+                     <p>The Mistress Juga punya fasilitas booking online lho . . . <br> Klik Aja Tombol dibawah </p>
+                     <span class="glyphicon glyphicon-book" aria-hidden="true"></span><br>
+                     <a  href="#booking" class="scroll agileits w3layoutsagileits w3layouts scroll hvr-rectangle-out agileits w3layouts  fadeInDown animated" data-wow-delay=".2s"><p style="color:black">Booking Online</p> </a>
+					 <br>
                  </div>
                  <div class="col-md-4 ser-top wow fadeInRight animated" data-wow-delay=".5s">
-                     <h5>Lorem Ipsum is simply dummy</h5>
-                     <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete. </p>
+                     <h5>Fasilitas 3</h5>
+                     <p>Deskripsi 3. </p>
                      <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
                  </div>
                  <div class="clearfix"></div>
@@ -451,82 +455,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
          </div>
      </div>
      <!---->
-     <div class="event" id="events">
-         <div class="container">
 
-             <div class="top-event">
-                 <h3>Events </h3>
-                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
-                     Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-             </div>
-             <div class="event-grid ">
-                 <div class="event-left wow fadeInLeft animated" data-wow-delay=".5s">
-                     <a href="single.html"><img src="<?= base_url(); ?>assets/main/images/pc.jpg" class="img-responsive" alt=""></a>
-                     <div class="event-top">
-                         <div class="event-gr">
-                             <h4><a href="single.html">Contrary to popular belief</a> </h4>
-                             <p> There are many variations of passages of Lorem Ipsum available, but the majority have suffered</p>
-                         </div>
-                     </div>
-                 </div>
-                 <div class="event-right wow fadeInRight animated" data-wow-delay=".5s">
-                     <a href="single.html"><img src="<?= base_url(); ?>assets/main/images/pc1.jpg" class="img-responsive" alt=""></a>
-                     <div class="event-top event-top1">
-                         <div class="event-gr">
-                             <h4><a href="single.html">There are many variations</a> </h4>
-                             <p> There are many variations of passages of Lorem Ipsum available, but the majority have suffered</p>
-                         </div>
-                     </div>
-                 </div>
-                 <div class="clearfix"></div>
-             </div>
-             <div class="event-grid">
-                 <div class="event-left event-left1 wow fadeInRight animated" data-wow-delay=".5s">
-                     <a href="single.html"><img src="<?= base_url(); ?>assets/main/images/pc2.jpg" class="img-responsive" alt=""></a>
-                     <div class="clearfix"></div>
-                     <div class="event-top event-t">
-                         <div class="event-gr">
-                             <h4><a href="single.html">There are many variations </a></h4>
-                             <p> There are many variations of passages of Lorem Ipsum available, but the majority have suffered</p>
-                         </div>
-                     </div>
-                 </div>
-                 <div class="event-right event-right1 wow fadeInLeft animated" data-wow-delay=".5s">
-                     <a href="single.html"><img src="<?= base_url(); ?>assets/main/images/pc3.jpg" class="img-responsive" alt=""></a>
-                     <div class="clearfix"></div>
-                     <div class="event-top event-t1">
-                         <div class="event-gr">
-                             <h4><a href="single.html">Contrary to popular belief </a></h4>
-                             <p> There are many variations of passages of Lorem Ipsum available, but the majority have suffered</p>
-                         </div>
-                     </div>
-                 </div>
-                 <div class="clearfix"></div>
-             </div>
-             <div class="event-grid ">
-                 <div class="event-left wow fadeInLeft animated" data-wow-delay=".5s">
-                     <a href="single.html"><img src="<?= base_url(); ?>assets/main/images/pc4.jpg" class="img-responsive" alt=""></a>
-                     <div class="event-top">
-                         <div class="event-gr">
-                             <h4><a href="single.html">There are many variations </a></h4>
-                             <p> There are many variations of passages of Lorem Ipsum available, but the majority have suffered</p>
-                         </div>
-                     </div>
-                 </div>
-                 <div class="event-right wow fadeInRight animated" data-wow-delay=".5s">
-                     <a href="single.html"><img src="<?= base_url(); ?>assets/main/images/pc5.jpg" class="img-responsive" alt=""></a>
-                     <div class="event-top event-top1">
-                         <div class="event-gr">
-                             <h4><a href="single.html">Contrary to popular belief </a></h4>
-                             <p> There are many variations of passages of Lorem Ipsum available, but the majority have suffered</p>
-                         </div>
-                     </div>
-                 </div>
-                 <div class="clearfix"></div>
-             </div>
-         </div>
-     </div>
-     <!---->
+     <!--Testimoni-->
      <div class="test">
          <div class="container">
              <h3>Testimonials</h3>
@@ -559,50 +489,148 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
              </div>
          </div>
      </div>
-     <!---->
-     <div class="advantage">
+	 
+     <!--Booking Menu-->
+     <div class="advantage" id="booking">
          <div class="container">
              <div class="advantage-top">
-                 <h3>Our Advantages</h3>
-                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
-                     Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                 <h3>Booking Tempat</h3>
+                 <p>Silahkan Isi Data dibawah untuk Booking.</p>
              </div>
-             <div class="ad-top">
-                 <div class="col-md-4 wel wow fadeInLeft animated" data-wow-delay=".5s">
-                     <div class="content-ic">
-                         <i class="glyphicon glyphicon-file"></i>
-                     </div>
-                     <div class="content-text">
-                         <h5>Certification </h5>
-                         <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature </p>
-                     </div>
-                     <div class="clearfix"> </div>
-                 </div>
-                 <div class="col-md-4 wel wow fadeInUp animated" data-wow-delay=".5s">
-                     <div class="content-ic">
-                         <i class="glyphicon glyphicon-tag"></i>
-                     </div>
-                     <div class="content-text">
-                         <h5>Best Prices </h5>
-                         <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature </p>
-                     </div>
-                     <div class="clearfix"> </div>
-                 </div>
-                 <div class="col-md-4 wel wow fadeInRight animated" data-wow-delay=".5s">
-                     <div class="content-ic">
-                         <i class="glyphicon glyphicon-earphone"></i>
-                     </div>
-                     <div class="content-text">
-                         <h5>24/7 Support </h5>
-                         <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature </p>
-                     </div>
-                     <div class="clearfix"> </div>
-                 </div>
-                 <div class="clearfix"> </div>
-             </div>
+			 </br>
+			 <div class="col-md-6 agileits w3layouts contact-top">
+			<form>			
+				<div class="row">
+					<div class="col-md-6">
+					<input type="text" placeholder="Nama Lengkap" required="" >	
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-md-5">
+					<input type="text" placeholder="No. Hp" required="" >	
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-md-7">
+					<input type="text" placeholder="Alamat Rumah" required="" >	
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4">
+						<div class="form-group">
+							<input type="text" class="form-control datepicker" placeholder="Tanggal Booking">
+						</div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-md-6">
+					Total Biaya (Rp)
+					<input type="text" placeholder="Total Biaya (Rp)" id="total" value="0" readonly>	
+					</div>
+				</div>
+					
+				
+				<label class="hvr-rectangle-out agileits w3layouts">
+						<input type="submit" value="Booking" >
+				</label>		
+										
+			</div>
+			<div id="salon" class="col-md-6 agileits w3layouts contact-top">						
+					<div class="row">
+					<p>Pilih Kategori </p>
+						<div class="col-md-3">
+							<div class="custom-control custom-checkbox image-checkbox">
+								<input type="checkbox" class="custom-control-input" id="ck1a" price="50000">
+								Creambath
+								<label class="custom-control-label" for="ck1a">
+									<img src="<?= base_url(); ?>assets/main/images/layanan/booking/rambut.jpg" alt="#" class="img-fluid">
+								</label>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="custom-control custom-checkbox image-checkbox">
+								<input type="checkbox" class="custom-control-input" id="ck1b" price="80000">
+								Makeup
+								<label class="custom-control-label" for="ck1b">
+									<img src="<?= base_url(); ?>assets/main/images/layanan/booking/makeup.jpg" alt="#" class="img-fluid">
+								</label>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="custom-control custom-checkbox image-checkbox">
+								<input type="checkbox" class="custom-control-input" id="ck1c" price="100000">
+								Pijatlulur
+								<label class="custom-control-label" for="ck1c">
+									<img src="<?= base_url(); ?>assets/main/images/layanan/booking/pijatlulur.jpg" alt="#" class="img-fluid">
+								</label>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="custom-control custom-checkbox image-checkbox">
+								<input type="checkbox" class="custom-control-input" id="ck1d" price="75000">
+								Pedicure
+								<label class="custom-control-label" for="ck1d">
+									<img src="<?= base_url(); ?>assets/main/images/layanan/booking/kuku.jpg" alt="#" class="img-fluid">
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3">
+							<div class="custom-control custom-checkbox image-checkbox">
+								<input type="checkbox" class="custom-control-input" id="ck1e" price="50000">
+								 Hair Styling
+								<label class="custom-control-label" for="ck1e">
+									<img src="<?= base_url(); ?>assets/main/images/layanan/booking/rambut2.jpg" alt="#" class="img-fluid">
+								</label>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="custom-control custom-checkbox image-checkbox">
+								<input type="checkbox" class="custom-control-input" id="ck1f" price="55000">
+								Masking
+								<label class="custom-control-label" for="ck1f">
+									<img src="<?= base_url(); ?>assets/main/images/layanan/booking/wajah.jpg" alt="#" class="img-fluid">
+								</label>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="custom-control custom-checkbox image-checkbox">
+								<input type="checkbox" class="custom-control-input" id="ck1g" price="90000">
+								Waxing
+								<label class="custom-control-label" for="ck1g">
+									<img src="<?= base_url(); ?>assets/main/images/layanan/booking/waxing.jpg" alt="#" class="img-fluid">
+								</label>
+							</div>
+						</div>
+					</div>				
+			</div>
+			</form>	
          </div>
      </div>
-     <!---->
+	 
+	 
+	
+<script>
+function calcAndShowTotal() {
+  var total = 0;
+  $('#salon :checkbox:checked').each(function() {
+    total += parseFloat($(this).attr('price')) || 0;
+  });
+  $('#total').val(total);
+}
+
+$('#salon :checkbox').change(calcAndShowTotal).change();
+</script>
+	 
+	 
+	 <!--Booking Menu-->
+
+     <!--Team-->
      <div class="our-team" id="team">
          <div class="container">
              <h3>Our Team</h3>
@@ -683,7 +711,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                  <div class="clearfix"> </div>
              </div>
              <div class="team">
-                 <div class="col-md-6 team-grid wow fadeInRight animated" data-wow-delay=".5s">
+                 <div class="col-md-6 team-grid wow fadeInLeft animated" data-wow-delay=".5s">
                      <div class="team-1">
                          <div class="col-md-5 agileits w3layouts col-1">
                              <img class="img-responsive gray" src="<?= base_url(); ?>assets/main/images/te3.jpg" alt="">
@@ -700,7 +728,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                          <div class="clearfix"> </div>
                      </div>
                  </div>
-                 <div class="col-md-6 team-grid wow agileits w3layouts fadeInLeft animated" data-wow-delay=".5s">
+                 <div class="col-md-6 team-grid wow agileits w3layouts fadeInRight animated" data-wow-delay=".5s">
                      <div class="team-1 agileits w3layouts">
                          <div class="col-md-5 agileits w3layouts col-1 ">
                              <img class="img-responsive agileits w3layouts gray" src="<?= base_url(); ?>assets/main/images/te2.jpg" alt="">
@@ -722,13 +750,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
              </div>
          </div>
      </div>
-     <!---->
+
+     <!--Client-->
      <div class="clients">
          <div class="container">
              <h3>What our client thinks about us </span></h3>
              <!---->
              <!-- requried-jsfiles-for owl -->
-             <link href="css/owl.carousel.css" rel="stylesheet">
+             <link href="<?= base_url(); ?>assets/main/css/owl.carousel.css" rel="stylesheet">
              <script src="<?= base_url(); ?>assets/main/js/owl.carousel.js"></script>
              <script>
                  $(document).ready(function() {
@@ -809,6 +838,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
          });
      </script>
      <a href="#" id="toTop" class="agileits w3layouts" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	 <script src="<?= base_url(); ?>assets/main/js/bootstrap-datepicker.min.js"></script>
+	 <script src="<?= base_url(); ?>assets/main/js/custom.js"></script>
+	 <script>
+    $(document).ready(function(){
+        setDatePicker()
+        setDateRangePicker(".startdate", ".enddate")
+        setMonthPicker()
+        setYearPicker()
+        setYearRangePicker(".startyear", ".endyear")
+    })
+    </script>
 
 
  </body>
