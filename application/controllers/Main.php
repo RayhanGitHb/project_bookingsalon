@@ -74,6 +74,43 @@ class Main extends CI_Controller
 		$this->load->view('main/transaksi', $date);
 	}
 	
+	Public function invoice($id_user)
+	{	
+		$date['booking'] = $this->Booking_model->ambilbooking($id_user);
+		$date['kategori'] = $this->Booking_model->ambilkategori($id_user);
+		
+		$this->load->view('main/invoice', $date);
+		
+		$this->_sendEmail();
+	}
+	
+	private function _sendEmail()
+	{
+		$config = [
+			'protocol' => 'smtp',
+			'smtp_host' => 'ssl://smtp.googlemail.com',
+			'smtp_user' => 'rayhanslasher@gmail.com',
+			'smtp_pass' => 'Semuanya123',
+			'smtp_port' => 465,
+			'mailtype' => 'html',
+			'charset' => 'utf-8',
+			'newline' => "\r\n"
+		];
+		
+		$this->load->library('email', $config);
+		
+		$this->email->from('rayhanslasher@gmail.com', 'Admin The Mistress Salon');
+		$this->email->to('rayhanthegamer@gmail.com');
+		$this->email->subject('Testing');
+		$this->email->message('Hello World');
+		
+		if ($this->email->send()) {
+			return true;
+		} else {
+			echo $this->email->print_debugger();
+		}
+	}
+	
 	Public function kirimbukti()
 	{
 		$this->session->userdata('id_user');

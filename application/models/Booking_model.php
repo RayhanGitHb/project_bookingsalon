@@ -23,12 +23,21 @@ class Booking_model extends CI_Model
 	{
 		return $this->db->get('booking')->result_array();
 	}
-
-	public function ambilkategori($keyword)
+	
+	public function ambilbooking($id_user)
+	{
+		$this->db->select('*');
+		$this->db->from('booking');
+		$this->db->where('id_user', $id_user);
+		return $this->db->get()->result_array();
+	}
+	
+	public function ambilkategori($id_user)
 	{
 		$this->db->select('*');
 		$this->db->from('kategori');
-		$this->db->like('id_user',$keyword);
+		$this->db->join('list_kategori', 'list_kategori.kategori = kategori.kategori');
+		$this->db->where('id_user', $id_user);
 		return $this->db->get()->result_array();
 	}
 }

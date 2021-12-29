@@ -357,7 +357,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				
 				<div class="row">
 					<div class="col-md-5">
-					<input type="text" placeholder="No. Hp" name="nohp" id="nohp" required="" >	
+					<input type="text" placeholder="No. Hp (tanpa spasi)" name="nohp" id="nohp" required="" >	
 					</div>
 				</div>
 				

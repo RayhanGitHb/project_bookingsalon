@@ -26,6 +26,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link href="<?= base_url(); ?>assets/admin/css/font-awesome.css" rel="stylesheet"> 
 <!-- //font-awesome icons -->
 <script src="<?= base_url(); ?>assets/admin/js/jquery2.0.3.min.js"></script>
+
+<script src="<?= base_url(); ?>assets/admin/js/html2canvas.min.js"></script>
+<script src="<?= base_url(); ?>assets/admin/js/html2canvas.js"></script>
+<script src="<?= base_url(); ?>assets/admin/js/html2canvas.ems.js"></script>
 </head>
 <body>
 <div class="log-w3">
@@ -56,7 +60,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<label for="alamat">Alamat : </label>
 				<input type="text" class="ggg" name="alamat" id="alamat" value="<?= $this->session->userdata('alamat'); ?>" readonly>
 			</div>
-			<div class="col-lg-4">
+			<div class="col-lg-7">
 				<label for="jml_kategori">Layanan : </label>
 				<input type="text" class="ggg" name="jml_kategori" id="jml_kategori" value="<?= $this->session->userdata('jml_kategori'); ?>" readonly>
 			</div>
@@ -64,7 +68,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<label for="jml_biaya">Total Pembayaran : 
 				<h2>Rp. <?= $this->session->userdata('jml_biaya'); ?></h2>
 				</label>
-			</div>		
+			</div>	
+			<div class="col-lg-12">
+			<a href="<?= base_url(); ?>main/invoice/<?= $this->session->userdata('id_user'); ?>" name ="invoice" class="btn btn-primary">
+                     Print Invoice
+				</a>
+			</div>
 			<div class="clearfix"></div>
 			<br>
 		<center><h1>Pembayaran Online (Optional)</h1></center>
@@ -92,13 +101,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<br>
 		</div>
 		
-			<div class="col-lg-11">
+			<div class="col-lg-12">
 			<label for="nama">Upload Bukti Pembayaran</label>
 			<input type="file" class="ggg" name="bukti" id="bukti" value="" required="">
 			</div>
+			
 			<div class="col-lg-12">
 			<input type="submit" class="costum-file-input" name="bukti" id="bukti" value="Kirim">
 			</div>
+			
+			
 			<div class="clearfix"></div>
 		
 			<br>
@@ -133,5 +145,11 @@ $(document).ready(function(){
 <script src="<?= base_url(); ?>assets/admin/js/jquery.nicescroll.js"></script>
 <!--[if lte IE 8]><script language="javascript" type="text/javascript" src="js/flot-chart/excanvas.min.js"></script><![endif]-->
 <script src="<?= base_url(); ?>assets/admin/js/jquery.scrollTo.js"></script>
+
+<script type="text/javascript">
+////	html2canvas(document.body).then(function(canvas) {
+//// document.body.appendChild(canvas);
+//// });
+</script>
 </body>
 </html>

@@ -66,7 +66,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<label for="jml_biaya">Total Pembayaran : 
 				<h2>Rp. <?= $this->session->userdata('jml_biaya'); ?></h2>
 				</label>
-			</div>		
+			</div>
+			<div class="col-lg-12">
+			<a href="<?= base_url(); ?>main/invoice/<?= $this->session->userdata('id_user'); ?>" name ="invoice" class="btn btn-primary">
+                     Print Invoice
+			</a>
+			</div>
 			<div class="clearfix"></div>
 			<br>
 		
