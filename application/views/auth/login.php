@@ -9,4 +9,8 @@
 				<div class="clearfix"></div>
 				<input type="submit" value="Sign In" name="login">
 		</form>
+	<br>
+			<div class="col-lg-5">
+				<a href="<?= base_url('Main'); ?>">Kembali ke Home</a>
+			</div>
 </div>
